@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "logo": "mashable_logo.png",
+      "text-en": "You focus on putting in the work, and the technology handles the rest.",
+      "text-es": "Te enfocas en poner el trabajo, y la tecnología maneja el resto.",
+      "text-fr": "Vous vous concentrez sur le travail et la technologie s'occupe du reste.",
+      "text-cv": "Ooga booga, tech do work good."
+    },
+    {
+      "logo": "wired_logo.png",
+      "text-en": "Literally transports you from home to wherever you choose to run.",
+      "text-es": "Literalmente te transporta desde casa a donde sea que elijas correr.",
+      "text-fr": "Vous transporte littéralement de chez vous à l'endroit où vous choisissez de courir.",
+      "text-cv": "Ooga booga, tech make go far."
+    },
+    {
+      "logo": "wired_logo.png",
+      "text-en": "Breathes new life into a tired, old running routine.",
+      "text-es": "Respira nueva vida en una cansada y vieja rutina de carrera.",
+      "text-fr": "Insuffle une nouvelle vie à une vieille routine de course fatiguée.",
+      "test-cv": "Ooga booga, tech make hunter-gatherer lifestyle fun again."
+    }
+  ]
+}
