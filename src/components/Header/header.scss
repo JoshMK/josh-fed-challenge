@@ -1,0 +1,70 @@
+$header-bg-col: #fff;
+$header-border-col: #d5d6d6;
+$header-link-col: rgba(46, 49, 52, 0.8);
+
+.app {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 46px;
+    background-color: $header-bg-col;
+    border: 1px solid $header-border-col;
+    border-top: 0;
+  }
+  &__header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $header-link-col;
+    font-family: "Proxima Nova Lt";
+    font-size: 0.875em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-right: 1px solid $header-border-col;
+    padding: 0 3em;
+  }
+  &__header-link,
+  &__header-subheader-link {
+    text-decoration: none;
+  }
+  &__header-subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+    background-color: $header-bg-col;
+  }
+  &__header-subheader-link {
+    color: $header-link-col;
+    font-family: "Proxima Nova Lt";
+    font-size: 0.875em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0 3em;
+  }
+  &__header-subheader-button {
+    margin-right: 1em;
+    position: absolute;
+    right: 0;
+    display: block;
+    text-align: center;
+    width: 90px;
+    height: 36px;
+    box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+    border-radius: 4px;
+    background-color: #0069d2;
+    color: #ffffff;
+    font-family: "Proxima Nova Rg";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
