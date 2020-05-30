@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "img": "img0.png",
+      "img": "img0-main.png",
       "img-sm": "img0-sm.png",
       "time": 30.53,
       "dist": "6,248",
@@ -11,7 +11,7 @@
       "text-es": "Lago Inniscarra, Irlanda — Pirámide"
     },
     {
-      "img": "img1.png",
+      "img": "img1-main.png",
       "img-sm": "img1-sm.png",
       "time": 0,
       "dist": "",
@@ -21,7 +21,7 @@
       "text-es": "Serie de Rendimiento"
     },
     {
-      "img": "img2.png",
+      "img": "img2-main.png",
       "img-sm": "img2-sm.png",
       "time": 44.13,
       "dist": "9,948",
@@ -31,7 +31,7 @@
       "text-es": "Tirones Lentos e Intervalos Rápidos"
     },
     {
-      "img": "img3.png",
+      "img": "img3-main.png",
       "img-sm": "img3-sm.png",
       "time": 0,
       "dist": "",
@@ -41,7 +41,7 @@
       "text-es": "20 Minutos para Tonificado"
     },
     {
-      "img": "img4.png",
+      "img": "img4-main.png",
       "img-sm": "img4-sm.png",
       "time": 36.22,
       "dist": "8,648",
@@ -51,7 +51,7 @@
       "text-es": "Charles Race, Boston, Massachusetts"
     },
     {
-      "img": "img5.png",
+      "img": "img5-main.png",
       "img-sm": "img5-sm.png",
       "time": 0,
       "dist": "",
@@ -61,7 +61,7 @@
       "text-es": "Serie HIIT de Cuerpo Completo"
     },
     {
-      "img": "img6.png",
+      "img": "img6-main.png",
       "img-sm": "img6-sm.png",
       "time": 22.22,
       "dist": "4,660",
@@ -71,7 +71,7 @@
       "text-es": "Río Kafue, Zambia — Pirámide de Power Stroke"
     },
     {
-      "img": "img7.png",
+      "img": "img7-main.png",
       "img-sm": "img7-sm.png",
       "time": 0,
       "dist": "",

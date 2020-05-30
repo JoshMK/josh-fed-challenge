@@ -4,7 +4,6 @@ import React from "react";
 import "./review-slider-item.scss";
 
 function ReviewSliderItem(props) {
-  //const logoImg = "mashable_logo.png";
   const logoImg = props.logo ? props.logo : "";
   return (
     <div className="app__review-slider-item">

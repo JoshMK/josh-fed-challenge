@@ -1,13 +1,14 @@
 //React core
 import React from "react";
 //SCSS
-import "./product-grid-item.scss";
+import "./blog-grid-item.scss";
 
-function ProductGridItem(props) {
+function BlogGridItem(props) {
+  const logoImg = props.img ? props.img : "";
   return (
-    <div className="app__product-grid-item">
+    <div className="app__blog-grid-item">
       <img
-        src={require(`../../assets/images/review-slider-item-logos/${logoImg}`)}
+        src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
         alt=""
       />
       <p>{props["text-en"]}</p>
@@ -15,4 +16,4 @@ function ProductGridItem(props) {
   );
 }
 
-export default ProductGridItem;
+export default BlogGridItem;

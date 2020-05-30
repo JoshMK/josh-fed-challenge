@@ -1,12 +1,22 @@
 //React core
 import React from "react";
+//custom components
+import BlogGridItem from "../BlogGridItem/BlogGridItem";
 //jSON
-import reviews from "../../constants/reviews.json";
+import blogItems from "../../constants/blog-grid-items.json";
 //SCSS
-import "./product-grid.scss";
+import "./blog-grid.scss";
 
-function ProductGrid() {
-  return <div className="app__product-grid"></div>;
+const BLOGPOSTS = blogItems["posts"];
+
+function BlogGrid() {
+  return (
+    <div className="app__blog-grid">
+      {Object.values(BLOGPOSTS).map((post, i) => {
+        return <BlogGridItem key={`post-${i}`} {...post} />;
+      })}
+    </div>
+  );
 }
 
-export default ProductGrid;
+export default BlogGrid;
