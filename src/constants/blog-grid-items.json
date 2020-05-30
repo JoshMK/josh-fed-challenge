@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "img": "img0.png",
+      "img-sm": "img0-sm.png",
+      "time": 30.53,
+      "dist": "6,248",
+      "detailsLink": "./home",
+      "workouts": 0,
+      "text-en": "Lake Inniscarra, Ireland—Pyramid",
+      "text-es": "Lago Inniscarra, Irlanda — Pirámide"
+    },
+    {
+      "img": "img1.png",
+      "img-sm": "img1-sm.png",
+      "time": 0,
+      "dist": "",
+      "detailsLink": "",
+      "workouts": 9,
+      "text-en": "Performance Series",
+      "text-es": "Serie de Rendimiento"
+    },
+    {
+      "img": "img2.png",
+      "img-sm": "img2-sm.png",
+      "time": 44.13,
+      "dist": "9,948",
+      "detailsLink": "",
+      "workouts": 0,
+      "text-en": "Slow Pulls and Fast Intervals",
+      "text-es": "Tirones Lentos e Intervalos Rápidos"
+    },
+    {
+      "img": "img3.png",
+      "img-sm": "img3-sm.png",
+      "time": 0,
+      "dist": "",
+      "detailsLink": "",
+      "workouts": 12,
+      "text-en": "20 Minutes to Toned",
+      "text-es": "20 Minutos para Tonificado"
+    },
+    {
+      "img": "img4.png",
+      "img-sm": "img4-sm.png",
+      "time": 36.22,
+      "dist": "8,648",
+      "detailsLink": "",
+      "workouts": 0,
+      "text-en": "Charles Race, Boston, Massachusetts",
+      "text-es": "Charles Race, Boston, Massachusetts"
+    },
+    {
+      "img": "img5.png",
+      "img-sm": "img5-sm.png",
+      "time": 0,
+      "dist": "",
+      "detailsLink": "",
+      "workouts": 12,
+      "text-en": "Full-Body HIIT Series",
+      "text-es": "Serie HIIT de Cuerpo Completo"
+    },
+    {
+      "img": "img6.png",
+      "img-sm": "img6-sm.png",
+      "time": 22.22,
+      "dist": "4,660",
+      "detailsLink": "",
+      "workouts": 0,
+      "text-en": "Kafue River, Zambia—Power Stroke Pyramid",
+      "text-es": "Río Kafue, Zambia — Pirámide de Power Stroke"
+    },
+    {
+      "img": "img7.png",
+      "img-sm": "img7-sm.png",
+      "time": 0,
+      "dist": "",
+      "detailsLink": "",
+      "workouts": 16,
+      "text-en": "Shred & Burn Series",
+      "text-es": "Serie Shred & Burn"
+    }
+  ]
+}
