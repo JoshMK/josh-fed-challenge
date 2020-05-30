@@ -1,0 +1,34 @@
+.app {
+  &__hero-image {
+    background-color: #000;
+    opacity: 0.79;
+    //media queries
+    @media screen and (min-width: 768px) {
+      height: 801px;
+    }
+  }
+  &__hero-image-textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__hero-image-text {
+    color: #ffffff;
+    font-family: "Proxima Nova Lt";
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    max-width: 984px;
+  }
+  &__hero-image-button {
+    width: 392px;
+    color: #fff;
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: #0069d2;
+  }
+}
