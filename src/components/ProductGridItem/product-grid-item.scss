@@ -15,4 +15,12 @@
       height: 338px;
     }
   }
+  &__product-grid-item-text {
+    opacity: 0.8;
+    color: #2e3134;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    line-height: 28px;
+  }
 }

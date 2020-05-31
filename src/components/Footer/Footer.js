@@ -113,8 +113,8 @@ function renderFooterSVG(icon) {
 //renderFooterNavItems - ouput the markup for each primary footer list
 function renderFooterNavItems(item, lang) {
   return (
-    <li key={item.link}>
-      <a href={item.link} className="app__footer-list-link">
+    <li key={item.link} className="app__footer-list-item">
+      <a href={item.link} className="app__footer-list-item-link">
         {item[`text-${lang}`]}
       </a>
     </li>

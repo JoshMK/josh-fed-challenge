@@ -2,21 +2,25 @@
   "products": [
     {
       "img": "img0.png",
+      "alt": "a woman running on a treadmill",
       "text-english": "Treadmills",
       "text-español": "Cintas de correr"
     },
     {
       "img": "img1.png",
+      "alt": "a man cycling on a bicycle",
       "text-english": "Bikes",
       "text-español": "Bicicletas"
     },
     {
       "img": "img2.png",
+      "alt": "a woman running on an elliptical",
       "text-english": "Ellipticals",
       "text-español": "Elípticas"
     },
     {
       "img": "img3.png",
+      "alt": "a man strength training",
       "text-english": "Strength",
       "text-español": "Fuerza"
     }

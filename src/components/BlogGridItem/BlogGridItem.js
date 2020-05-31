@@ -101,11 +101,13 @@ function BlogGridItem(props) {
         <p className="app__blog-grid-item-text">
           {props[`text-${props.lang}`]}
         </p>
-        <img
-          className="app__blog-grid-item-image-sm"
-          src={require(`../../assets/images/blog-grid-item-images/${logoImgSm}`)}
-          alt=""
-        />
+        <a href={props.detailsLink}>
+          <img
+            className="app__blog-grid-item-image-sm"
+            src={require(`../../assets/images/blog-grid-item-images/${logoImgSm}`)}
+            alt=""
+          />
+        </a>
         {/* conditionally show clock icon */}
         {renderClockIcon(props.time)}
         {/* conditionally show distance icon */}

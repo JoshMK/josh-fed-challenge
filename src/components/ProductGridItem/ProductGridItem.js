@@ -11,7 +11,9 @@ function ProductGridItem(props) {
         src={require(`../../assets/images/product-grid-item-images/${logoImg}`)}
         alt=""
       />
-      <p>{props[`text-${props.lang}`]}</p>
+      <p className="app__product-grid-item-text">
+        {props[`text-${props.lang}`]}
+      </p>
     </div>
   );
 }

@@ -8,14 +8,26 @@ const HeroImage = (props) => {
   const HEROBGSTYLE = {
     backgroundImage: `url("${HEROBG}")`,
   };
+  let heroText, heroTextLink;
+  switch (props.lang) {
+    case "english":
+      heroText = "The best personal training, right in your own home";
+      heroTextLink = "Join Ifit Coach";
+      break;
+    case "español":
+      heroText = "El mejor entrenamiento personal, justo en tu propia casa.";
+      heroTextLink = "Únete al entrenador IFIT";
+      break;
+    default:
+      heroText = "The best personal training, right in your own home";
+      heroTextLink = "Join Ifit Coach";
+  }
   return (
     <div className="app__hero-image">
       <div style={HEROBGSTYLE} className="app__hero-image-textbox">
-        <h1 className="app__hero-image-text">
-          The best personal training, right in your own home
-        </h1>
+        <h1 className="app__hero-image-text">{heroText}</h1>
         <a href="/join-ifit" className="app__hero-image-button">
-          Join Ifit Coach
+          {heroTextLink}
         </a>
       </div>
     </div>
