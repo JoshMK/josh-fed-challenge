@@ -3,9 +3,31 @@
     margin: 2em auto;
     box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
     border-radius: 4px;
+    max-width: 300px;
     background-color: #ffffff;
   }
   &__blog-grid-item-image {
     width: 100%;
+  }
+  &__blog-grid-item-content {
+    padding: 1em;
+  }
+  &__blog-grid-item-text {
+    color: #2e3134;
+    font-family: "Proxima Nova Rg";
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+  &__blog-grid-item-link {
+    display: block;
+    color: #0069d2;
+    font-family: "Proxima Nova Rg";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    text-transform: uppercase;
   }
 }

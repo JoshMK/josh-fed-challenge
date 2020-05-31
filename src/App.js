@@ -7,6 +7,8 @@ import ReviewSlider from "./components/ReviewSlider/ReviewSlider";
 import BlogGrid from "./components/BlogGrid/BlogGrid";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
 import Footer from "./components/Footer/Footer";
+//SCSS
+import "./app.scss";
 
 function App() {
   return (

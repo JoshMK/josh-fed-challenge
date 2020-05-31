@@ -1,3 +1,5 @@
+$hero-image-button-col: #0069d2;
+
 .app {
   &__hero-image {
     background-color: #000;
@@ -40,7 +42,12 @@
     line-height: 56px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    background-color: #0069d2;
+    background-color: $hero-image-button-col;
     margin: 1em 0;
+    transition: background-color 0.2s;
+  }
+  &__hero-image-button:focus,
+  &__hero-image-button:hover {
+    background-color: darken($hero-image-button-col, 12.5%);
   }
 }
