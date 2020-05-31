@@ -11,22 +11,30 @@ function Header(props) {
   return (
     <header>
       <nav aria-label="Primary" className="app__header">
-        {PRIMARYNAV.map((item) => {
-          return (
-            <a href={item.link} className="app__header-link">
-              {item[`text-${props.lang}`]}
-            </a>
-          );
-        })}
+        <ul className="app__header-list">
+          {PRIMARYNAV.map((item) => {
+            return (
+              <li className="app__header-list-item">
+                <a href={item.link} className="app__header-link">
+                  {item[`text-${props.lang}`]}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
       <nav aria-label="Secondary" className="app__header-subheader">
-        {SECONDARYNAV.map((item) => {
-          return (
-            <a href={item.link} className="app__header-subheader-link">
-              {item[`text-${props.lang}`]}
-            </a>
-          );
-        })}
+        <ul className="app__header-subheader-list">
+          {SECONDARYNAV.map((item) => {
+            return (
+              <li>
+                <a href={item.link} className="app__header-subheader-link">
+                  {item[`text-${props.lang}`]}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
     </header>
   );
