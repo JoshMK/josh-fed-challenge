@@ -50,7 +50,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     text-transform: uppercase;
     border-right: 1px solid $header-border-col;
     transition: padding 0.1s;
-    //tablet view
+    //tablet
     @media screen and (min-width: 768px) {
       padding: 0 3em;
     }
@@ -70,7 +70,11 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     position: relative;
     flex-direction: column;
     justify-content: center;
-    //tablet view
+    //laptop
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+    //tablet
     @media screen and (min-width: 768px) {
       flex-direction: row;
     }

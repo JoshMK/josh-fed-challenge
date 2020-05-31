@@ -14,7 +14,7 @@ function HeroImage(props) {
         <h1 className="app__hero-image-text">
           The best personal training, right in your own home
         </h1>
-        <a href="" className="app__hero-image-button">
+        <a href="/join-ifit" className="app__hero-image-button">
           Join Ifit Coach
         </a>
       </div>

@@ -5,8 +5,7 @@ $hero-image-button-col: #0069d2;
     background-color: #000;
     opacity: 0.79;
     height: 400px;
-    transition: all 0.2s;
-    //desktop view
+    //tablet
     @media screen and (min-width: 768px) {
       padding-top: 72px;
       height: 800px;
@@ -29,7 +28,7 @@ $hero-image-button-col: #0069d2;
     letter-spacing: 1px;
     margin: 0 1em 1em 1em;
     max-width: 1360px;
-    //desktop view
+    //tablet
     @media screen and (min-width: 768px) {
       font-size: 6em;
     }
