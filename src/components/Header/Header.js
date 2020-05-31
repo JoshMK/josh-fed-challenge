@@ -1,11 +1,13 @@
 //React core
 import React from "react";
+//custom components
+import HeaderNavButton from "../HeaderNavButton/HeaderNavButton";
 //JSON
 import headerNavItems from "../../constants/header-nav-items.json";
 //SCSS
 import "./header.scss";
 
-function Header(props) {
+const Header = (props) => {
   const PRIMARYNAV = headerNavItems["primary-navigation"];
   const SECONDARYNAV = headerNavItems["secondary-navigation"];
   return (
@@ -22,12 +24,13 @@ function Header(props) {
             );
           })}
         </ul>
+        <HeaderNavButton />
       </nav>
       <nav aria-label="Secondary" className="app__header-subheader">
         <ul className="app__header-subheader-list">
           {SECONDARYNAV.map((item) => {
             return (
-              <li key={item.link}>
+              <li className="app__header-subheader-list-item" key={item.link}>
                 <a
                   href={`/${item.link}`}
                   className="app__header-subheader-link"
@@ -37,10 +40,15 @@ function Header(props) {
               </li>
             );
           })}
+          <li className="app__header-subheader-list-item">
+            <a className="app__header-subheader-button" href="/sign-up">
+              Sign Up
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

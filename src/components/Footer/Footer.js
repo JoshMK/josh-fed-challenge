@@ -98,7 +98,7 @@ function renderFooterSVG(icon) {
     );
   }
   return (
-    <li>
+    <li key={icon.link}>
       <a
         className="app__footer-icon-list-link"
         href={icon.link}
@@ -121,7 +121,7 @@ function renderFooterNavItems(item, lang) {
   );
 }
 
-function Footer(props) {
+const Footer = (props) => {
   const MAINITEMS = footerNavItems["main"];
   const ACCOUNTITEMS = footerNavItems["account"];
   const SUPPORTITEMS = footerNavItems["support"];
@@ -155,7 +155,11 @@ function Footer(props) {
         </span>
         {COPYWRITE.map((item) => {
           return (
-            <a className="app__footer-subfooter-link" href={item.link}>
+            <a
+              key={item.link}
+              className="app__footer-subfooter-link"
+              href={item.link}
+            >
               {item[`text-${props.lang}`]}
             </a>
           );
@@ -163,6 +167,6 @@ function Footer(props) {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

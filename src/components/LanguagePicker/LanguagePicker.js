@@ -3,7 +3,7 @@ import React from "react";
 //SCSS
 import "./language-picker.scss";
 
-function LanguagePicker(props) {
+const LanguagePicker = (props) => {
   return (
     <div className="app__language-picker">
       <form action="">
@@ -26,6 +26,6 @@ function LanguagePicker(props) {
       </form>
     </div>
   );
-}
+};
 
 export default LanguagePicker;
