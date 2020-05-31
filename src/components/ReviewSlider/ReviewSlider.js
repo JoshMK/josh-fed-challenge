@@ -9,11 +9,13 @@ import "./review-slider.scss";
 
 const REVIEWSLIDES = reviews["reviews"];
 
-function ReviewSlider() {
+function ReviewSlider(props) {
   return (
     <div className="app__review-slider">
       {Object.values(REVIEWSLIDES).map((slide, i) => {
-        return <ReviewSliderItem key={`slide-${i}`} {...slide} />;
+        return (
+          <ReviewSliderItem lang={props.lang} key={`slide-${i}`} {...slide} />
+        );
       })}
     </div>
   );

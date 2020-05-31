@@ -11,7 +11,9 @@ function ReviewSliderItem(props) {
         src={require(`../../assets/images/review-slider-item-images/${logoImg}`)}
         alt={props.alt}
       />
-      <p className="app__review-slider-item-text">{`"${props["text-en"]}"`}</p>
+      <p className="app__review-slider-item-text">{`"${
+        props[`text-${props.lang}`]
+      }"`}</p>
     </div>
   );
 }

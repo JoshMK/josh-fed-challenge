@@ -9,11 +9,11 @@ import "./blog-grid.scss";
 
 const BLOGPOSTS = blogItems["posts"];
 
-function BlogGrid() {
+function BlogGrid(props) {
   return (
     <div className="app__blog-grid">
       {Object.values(BLOGPOSTS).map((post, i) => {
-        return <BlogGridItem key={`post-${i}`} {...post} />;
+        return <BlogGridItem lang={props.lang} key={`post-${i}`} {...post} />;
       })}
     </div>
   );

@@ -8,8 +8,8 @@
       "dist": "6,248",
       "detailsLink": "./home",
       "workouts": 0,
-      "text-en": "Lake Inniscarra, Ireland—Pyramid",
-      "text-es": "Lago Inniscarra, Irlanda — Pirámide"
+      "text-english": "Lake Inniscarra, Ireland—Pyramid",
+      "text-español": "Lago Inniscarra, Irlanda — Pirámide"
     },
     {
       "img": "img1-main.png",
@@ -19,8 +19,8 @@
       "dist": "",
       "detailsLink": "",
       "workouts": 9,
-      "text-en": "Performance Series",
-      "text-es": "Serie de Rendimiento"
+      "text-english": "Performance Series",
+      "text-español": "Serie de Rendimiento"
     },
     {
       "img": "img2-main.png",
@@ -30,8 +30,8 @@
       "dist": "9,948",
       "detailsLink": "",
       "workouts": 0,
-      "text-en": "Slow Pulls and Fast Intervals",
-      "text-es": "Tirones Lentos e Intervalos Rápidos"
+      "text-english": "Slow Pulls and Fast Intervals",
+      "text-español": "Tirones Lentos e Intervalos Rápidos"
     },
     {
       "img": "img3-main.png",
@@ -41,8 +41,8 @@
       "dist": "",
       "detailsLink": "",
       "workouts": 12,
-      "text-en": "20 Minutes to Toned",
-      "text-es": "20 Minutos para Tonificado"
+      "text-english": "20 Minutes to Toned",
+      "text-español": "20 Minutos para Tonificado"
     },
     {
       "img": "img4-main.png",
@@ -52,8 +52,8 @@
       "dist": "8,648",
       "detailsLink": "",
       "workouts": 0,
-      "text-en": "Charles Race, Boston, Massachusetts",
-      "text-es": "Charles Race, Boston, Massachusetts"
+      "text-english": "Charles Race, Boston, Massachusetts",
+      "text-español": "Charles Race, Boston, Massachusetts"
     },
     {
       "img": "img5-main.png",
@@ -63,8 +63,8 @@
       "dist": "",
       "detailsLink": "",
       "workouts": 12,
-      "text-en": "Full-Body HIIT Series",
-      "text-es": "Serie HIIT de Cuerpo Completo"
+      "text-english": "Full-Body HIIT Series",
+      "text-español": "Serie HIIT de Cuerpo Completo"
     },
     {
       "img": "img6-main.png",
@@ -74,8 +74,8 @@
       "dist": "4,660",
       "detailsLink": "",
       "workouts": 0,
-      "text-en": "Kafue River, Zambia—Power Stroke Pyramid",
-      "text-es": "Río Kafue, Zambia — Pirámide de Power Stroke"
+      "text-english": "Kafue River, Zambia—Power Stroke Pyramid",
+      "text-español": "Río Kafue, Zambia — Pirámide de Power Stroke"
     },
     {
       "img": "img7-main.png",
@@ -85,8 +85,8 @@
       "dist": "",
       "detailsLink": "",
       "workouts": 16,
-      "text-en": "Shred & Burn Series",
-      "text-es": "Serie Shred & Burn"
+      "text-english": "Shred & Burn Series",
+      "text-español": "Serie Shred & Burn"
     }
   ]
 }

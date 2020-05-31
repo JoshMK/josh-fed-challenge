@@ -3,20 +3,20 @@
     {
       "logo": "mashable_logo.png",
       "alt": "the Mashable logo",
-      "text-en": "You focus on putting in the work, and the technology handles the rest.",
-      "text-es": "Te enfocas en poner el trabajo, y la tecnología maneja el resto."
+      "text-english": "You focus on putting in the work, and the technology handles the rest.",
+      "text-español": "Te enfocas en poner el trabajo, y la tecnología maneja el resto."
     },
     {
       "logo": "wired_logo.png",
       "alt": "the Wired logo",
-      "text-en": "Literally transports you from home to wherever you choose to run.",
-      "text-es": "Literalmente te transporta desde casa a donde sea que elijas correr."
+      "text-english": "Literally transports you from home to wherever you choose to run.",
+      "text-español": "Literalmente te transporta desde casa a donde sea que elijas correr."
     },
     {
       "logo": "wired_logo.png",
       "alt": "the Wired logo",
-      "text-en": "Breathes new life into a tired, old running routine.",
-      "text-es": "Respira nueva vida en una cansada y vieja rutina de carrera."
+      "text-english": "Breathes new life into a tired, old running routine.",
+      "text-español": "Respira nueva vida en una cansada y vieja rutina de carrera."
     }
   ]
 }

@@ -94,7 +94,9 @@ function BlogGridItem(props) {
       {/* conditionally render images */}
       {renderImage(props)}
       <div className="app__blog-grid-item-content">
-        <p className="app__blog-grid-item-text">{props["text-en"]}</p>
+        <p className="app__blog-grid-item-text">
+          {props[`text-${props.lang}`]}
+        </p>
         {/* conditionally show clock icon */}
         {renderClockIcon(props.time)}
         {/* conditionally show distance icon */}
