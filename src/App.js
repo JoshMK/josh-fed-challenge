@@ -60,7 +60,7 @@ class App extends Component {
     return (
       <>
         <Header {...this.state} toggleMobileMenu={this.toggleMobileMenu} />
-        <HeroImage lang={this.state.lang} />
+        <HeroImage lang={this.state.lang} heroImage={"gmapsinworkout"} />
         <ReviewSlider lang={this.state.lang} />
         <BlogGrid lang={this.state.lang} />
         <ProductGrid lang={this.state.lang} />

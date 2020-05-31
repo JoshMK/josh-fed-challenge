@@ -8,6 +8,7 @@ $hero-image-button-col: #0069d2;
     transition: all 0.2s;
     //desktop view
     @media screen and (min-width: 768px) {
+      padding-top: 72px;
       height: 800px;
     }
   }
@@ -16,6 +17,8 @@ $hero-image-button-col: #0069d2;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: 50% 50%;
     height: 100%;
     text-align: center;
   }

@@ -3,10 +3,15 @@ $header-border-col: #d5d6d6;
 $header-link-col: rgba(46, 49, 52, 0.8);
 
 .app {
-  &__header--scroll {
-    position: fixed;
-    width: 100%;
+  &__header {
     z-index: 1;
+    position: fixed;
+    opacity: 0;
+  }
+  &__header--scroll {
+    width: 100%;
+    opacity: 1;
+    transition: all 0.1s;
   }
   &__header-nav {
     height: 46px;
@@ -44,6 +49,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     padding: 0 1em;
     text-transform: uppercase;
     border-right: 1px solid $header-border-col;
+    transition: padding 0.1s;
     //tablet view
     @media screen and (min-width: 768px) {
       padding: 0 3em;
@@ -109,7 +115,6 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     letter-spacing: 0.5px;
     line-height: 3em;
     min-width: 94px;
-    min-height: 40px;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
