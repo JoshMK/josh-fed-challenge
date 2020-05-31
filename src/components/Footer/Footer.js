@@ -164,11 +164,15 @@ function Footer() {
         </ul>
       </div>
       <div className="app__footer-subfooter">
-        <a href="/privacypolicy">Privacy notice</a>
-        <a href="/termsofuse">Terms of use</a>
-        <a href="/cookiepolicy">Do Not Sell My Personal Information</a>
-        <a href="/privacypolicy#cpn">Your California privacy rights</a>
-        <span>&copy; iFit.com, All rights reserved</span>
+        <span className="app__footer-subfooter-text">
+          &copy; iFit.com, All rights reserved
+        </span>
+        <a className="app__footer-subfooter-link" href="/privacypolicy">
+          Privacy notice
+        </a>
+        <a className="app__footer-subfooter-link" href="/termsofuse">
+          Terms of use
+        </a>
       </div>
     </footer>
   );
