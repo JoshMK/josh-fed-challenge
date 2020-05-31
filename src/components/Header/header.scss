@@ -3,19 +3,24 @@ $header-border-col: #d5d6d6;
 $header-link-col: rgba(46, 49, 52, 0.8);
 
 .app {
-  &__header {
+  &__header--scroll {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  &__header-nav {
     height: 46px;
     background-color: $header-bg-col;
     border: 1px solid $header-border-col;
     border-top: 0;
   }
-  &__header-list {
+  &__header-nav-list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  &__header-list,
-  &__header-subheader-list {
+  &__header-nav-list,
+  &__header-nav-subheader-list {
     display: flex;
     align-items: center;
     list-style: none;
@@ -23,11 +28,11 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     margin: 0;
     height: 100%;
   }
-  &__header-list-item,
-  &__header-subheader-list-item {
+  &__header-nav-list-item,
+  &__header-nav-subheader-list-item {
     height: 100%;
   }
-  &__header-link {
+  &__header-nav-link {
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,18 +49,18 @@ $header-link-col: rgba(46, 49, 52, 0.8);
       padding: 0 3em;
     }
   }
-  &__header-link,
-  &__header-subheader-link {
+  &__header-nav-link,
+  &__header-nav-subheader-link {
     text-decoration: none;
   }
-  &__header-subheader {
+  &__header-nav-subheader {
     box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
     background-color: $header-bg-col;
   }
-  &__header-subheader--hidden {
+  &__header-nav-subheader--hidden {
     display: none;
   }
-  &__header-subheader-list {
+  &__header-nav-subheader-list {
     position: relative;
     flex-direction: column;
     justify-content: center;
@@ -64,13 +69,13 @@ $header-link-col: rgba(46, 49, 52, 0.8);
       flex-direction: row;
     }
   }
-  &__header-subheader-list-item {
+  &__header-nav-subheader-list-item {
     width: 100%;
     @media screen and (min-width: 768px) {
       width: auto;
     }
   }
-  &__header-subheader-link {
+  &__header-nav-subheader-link {
     color: $header-link-col;
     font-size: 0.875em;
     font-weight: 600;
@@ -93,7 +98,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
       justify-content: center;
     }
   }
-  &__header-subheader-button {
+  &__header-nav-subheader-button {
     display: block;
     text-align: center;
     box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
