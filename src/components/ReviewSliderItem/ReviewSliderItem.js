@@ -3,7 +3,7 @@ import React from "react";
 //SCSS
 import "./review-slider-item.scss";
 
-function ReviewSliderItem(props) {
+const ReviewSliderItem = (props) => {
   const logoImg = props.logo ? props.logo : "";
   return (
     <div className="app__review-slider-item">
@@ -16,6 +16,6 @@ function ReviewSliderItem(props) {
       }"`}</p>
     </div>
   );
-}
+};
 
 export default ReviewSliderItem;

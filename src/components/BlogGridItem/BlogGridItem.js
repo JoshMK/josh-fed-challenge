@@ -91,7 +91,7 @@ function renderImage(props) {
   );
 }
 
-function BlogGridItem(props) {
+const BlogGridItem = (props) => {
   const logoImgSm = props["img-sm"] ? props["img-sm"] : "";
   return (
     <div className="app__blog-grid-item">
@@ -117,6 +117,6 @@ function BlogGridItem(props) {
       </div>
     </div>
   );
-}
+};
 
 export default BlogGridItem;
