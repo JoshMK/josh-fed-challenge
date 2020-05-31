@@ -2,12 +2,10 @@ $hero-image-button-col: #0069d2;
 
 .app {
   &__hero-image {
-    background-color: #000;
-    opacity: 0.79;
     height: 400px;
     //tablet
     @media screen and (min-width: 768px) {
-      padding-top: 72px;
+      padding-top: 6em;
       height: 800px;
     }
   }
@@ -20,16 +18,24 @@ $hero-image-button-col: #0069d2;
     background-position: 50% 50%;
     height: 100%;
     text-align: center;
+    padding-top: 48px;
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+    }
   }
   &__hero-image-text {
     color: #ffffff;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0 1em 1em 1em;
     max-width: 1360px;
     //tablet
     @media screen and (min-width: 768px) {
+      font-size: 4.5em;
+    }
+    //laptop
+    @media screen and (min-width: 1024px) {
       font-size: 6em;
     }
   }

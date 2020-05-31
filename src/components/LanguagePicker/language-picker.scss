@@ -1,8 +1,12 @@
 .app {
   &__language-picker {
-    position: absolute;
-    left: 0;
-    margin-left: 1em;
+    margin-bottom: 2em;
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      left: 0;
+      margin-left: 1em;
+      margin-bottom: 0;
+    }
   }
   &__language-picker-select {
     padding: 0.5em;
