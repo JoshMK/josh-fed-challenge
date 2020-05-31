@@ -7,7 +7,7 @@ import footerNavItems from "../../constants/footer-nav-items.json";
 //SCSS
 import "./footer.scss";
 
-//renderFooterSVG - ouput the amarkup for each footer svg (inlined for accessibe title/description tags)
+//renderFooterSVG - ouput the markup for each footer svg (inlined for accessibe title/description tags)
 function renderFooterSVG(icon) {
   let SVG;
   if (icon.name === "Youtube") {
@@ -95,10 +95,21 @@ function renderFooterSVG(icon) {
     <li>
       <a
         className="app__footer-icon-list-link"
-        href="https://pinterest.com/ifit"
+        href={icon.link}
         target="_blank"
       >
         {SVG}
+      </a>
+    </li>
+  );
+}
+
+//renderFooterNavItems - ouput the markup for each primary footer list
+function renderFooterNavItems(item, lang) {
+  return (
+    <li key={item.link}>
+      <a href={item.link} className="app__footer-list-link">
+        {item[`text-${lang}`]}
       </a>
     </li>
   );
@@ -113,37 +124,13 @@ function Footer(props) {
     <footer className="app__footer">
       <div className="app__footer-lists">
         <ul className="app__footer-list">
-          {MAINITEMS.map((item) => {
-            return (
-              <li key={item.link}>
-                <a href={item.link} className="app__footer-list-link">
-                  {item[`text-${props.lang}`]}
-                </a>
-              </li>
-            );
-          })}
+          {MAINITEMS.map((item) => renderFooterNavItems(item, props.lang))}
         </ul>
         <ul className="app__footer-list">
-          {ACCOUNTITEMS.map((item) => {
-            return (
-              <li key={item.link}>
-                <a href={item.link} className="app__footer-list-link">
-                  {item[`text-${props.lang}`]}
-                </a>
-              </li>
-            );
-          })}
+          {ACCOUNTITEMS.map((item) => renderFooterNavItems(item, props.lang))}
         </ul>
         <ul className="app__footer-list">
-          {SUPPORTITEMS.map((item) => {
-            return (
-              <li key={item.link}>
-                <a href={item.link} className="app__footer-list-link">
-                  {item[`text-${props.lang}`]}
-                </a>
-              </li>
-            );
-          })}
+          {SUPPORTITEMS.map((item) => renderFooterNavItems(item, props.lang))}
         </ul>
       </div>
       <div className="app__footer-icons">
