@@ -2,9 +2,11 @@
   &__hero-image {
     background-color: #000;
     opacity: 0.79;
-    //media queries
+    height: 400px;
+    transition: all 0.2s;
+    //desktop view
     @media screen and (min-width: 768px) {
-      height: 801px;
+      height: 800px;
     }
   }
   &__hero-image-textbox {
@@ -12,23 +14,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    text-align: center;
   }
   &__hero-image-text {
     color: #ffffff;
     font-family: "Proxima Nova Lt";
-    font-size: 6em;
+    font-size: 3em;
     font-weight: 600;
     letter-spacing: 1px;
-    max-width: 984px;
+    margin: 0 1em 1em 1em;
+    max-width: 1360px;
+    //desktop view
+    @media screen and (min-width: 768px) {
+      font-size: 6em;
+    }
   }
   &__hero-image-button {
-    width: 392px;
+    text-decoration: none;
     color: #fff;
+    width: 100%;
+    max-width: 392px;
     text-align: center;
     height: 56px;
     line-height: 56px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: #0069d2;
+    margin: 1em 0;
   }
 }
