@@ -1,0 +1,71 @@
+{
+  "main": [
+    {
+      "link": "company",
+      "text-english": "Company",
+      "text-español": "Empresa"
+    },
+    {
+      "link": "about",
+      "text-english": "About",
+      "text-español": "Acerca de"
+    },
+    {
+      "link": "contact-us",
+      "text-english": "Contact Us",
+      "text-español": "Contacta con Nosotras"
+    },
+    {
+      "link": "careers",
+      "text-english": "Careers",
+      "text-español": "Carreras"
+    }
+  ],
+  "account": [
+    {
+      "link": "account",
+      "text-english": "Account",
+      "text-español": "Cuenta"
+    },
+    {
+      "link": "log-in",
+      "text-english": "Log In",
+      "text-español": "Acerca de"
+    },
+    {
+      "link": "create-account",
+      "text-english": "Create Account",
+      "text-español": "Crear una cuenta"
+    }
+  ],
+  "support": [
+    {
+      "link": "support",
+      "text-english": "Support",
+      "text-español": "Apoyo"
+    },
+    {
+      "link": "help-center",
+      "text-english": "Help Center",
+      "text-español": "Centro de Ayuda"
+    },
+    {
+      "link": "acessibility",
+      "text-english": "Acessibility",
+      "text-español": "Accesibilidad"
+    }
+  ],
+  "icons": [{}],
+  "copywrite": [
+    {
+      "link": "privacy-notice",
+      "text-english": "Privacy Notice",
+      "text-español": "Aviso de Privacidad"
+    },
+    {
+      "link": "terms-of-use",
+      "text-english": "Terms of Use",
+      "text-español": "Términos de Uso"
+    }
+  ]
+}

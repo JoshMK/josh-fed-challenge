@@ -14,8 +14,8 @@ function Header(props) {
         <ul className="app__header-list">
           {PRIMARYNAV.map((item) => {
             return (
-              <li className="app__header-list-item">
-                <a href={item.link} className="app__header-link">
+              <li key={item.link} className="app__header-list-item">
+                <a href={`/${item.link}`} className="app__header-link">
                   {item[`text-${props.lang}`]}
                 </a>
               </li>
@@ -27,8 +27,11 @@ function Header(props) {
         <ul className="app__header-subheader-list">
           {SECONDARYNAV.map((item) => {
             return (
-              <li>
-                <a href={item.link} className="app__header-subheader-link">
+              <li key={item.link}>
+                <a
+                  href={`/${item.link}`}
+                  className="app__header-subheader-link"
+                >
                   {item[`text-${props.lang}`]}
                 </a>
               </li>

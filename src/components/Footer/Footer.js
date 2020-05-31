@@ -2,68 +2,50 @@
 import React from "react";
 //custom components
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
-//CSS
+//JSON
+import footerNavItems from "../../constants/footer-nav-items.json";
+//SCSS
 import "./footer.scss";
 
 function Footer(props) {
+  const MAINITEMS = footerNavItems["main"];
+  const ACCOUNTITEMS = footerNavItems["account"];
+  const SUPPORTITEMS = footerNavItems["support"];
   return (
     <footer className="app__footer">
       <div className="app__footer-lists">
         <ul className="app__footer-list">
-          <li>
-            <a href="" className="app__footer-list-link">
-              Company
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Contact Us
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Careers
-            </a>
-          </li>
+          {MAINITEMS.map((item) => {
+            return (
+              <li key={item.link}>
+                <a href={item.link} className="app__footer-list-link">
+                  {item[`text-${props.lang}`]}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <ul className="app__footer-list">
-          <li>
-            <a href="" className="app__footer-list-link">
-              Account
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Log In
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Create Account
-            </a>
-          </li>
+          {ACCOUNTITEMS.map((item) => {
+            return (
+              <li key={item.link}>
+                <a href={item.link} className="app__footer-list-link">
+                  {item[`text-${props.lang}`]}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <ul className="app__footer-list">
-          <li>
-            <a href="" className="app__footer-list-link">
-              Support
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Help Center
-            </a>
-          </li>
-          <li>
-            <a href="" className="app__footer-list-link">
-              Accessibility
-            </a>
-          </li>
+          {SUPPORTITEMS.map((item) => {
+            return (
+              <li key={item.link}>
+                <a href={item.link} className="app__footer-list-link">
+                  {item[`text-${props.lang}`]}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="app__footer-icons">
