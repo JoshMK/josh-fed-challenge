@@ -65,14 +65,21 @@ function Footer() {
         </ul>
       </div>
       <div className="app__footer-icons">
-        <ul aria-label="Visit our social media pages">
+        <ul
+          className="app__footer-icon-list"
+          aria-label="Visit our social media pages"
+        >
           <li>
-            <a href="https://pinterest.com/ifit" target="_blank" class="">
+            <a
+              className="app__footer-icon-list-link"
+              href="https://pinterest.com/ifit"
+              target="_blank"
+            >
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 32 32"
               >
                 <title>Youtube</title>
@@ -81,12 +88,16 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://pinterest.com/ifit" target="_blank" class="">
+            <a
+              className="app__footer-icon-list-link"
+              href="https://pinterest.com/ifit"
+              target="_blank"
+            >
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
+                width="24"
+                height="24"
                 viewBox="0 0 20 20"
               >
                 <title>Pinterest</title>
@@ -95,12 +106,16 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://pinterest.com/ifit" target="_blank" class="">
+            <a
+              className="app__footer-icon-list-link"
+              href="https://pinterest.com/ifit"
+              target="_blank"
+            >
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 32 32"
               >
                 <title>Facebook</title>
@@ -109,12 +124,16 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://pinterest.com/ifit" target="_blank" class="">
+            <a
+              className="app__footer-icon-list-link"
+              href="https://pinterest.com/ifit"
+              target="_blank"
+            >
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 32 32"
               >
                 <title>twitter</title>
@@ -123,12 +142,16 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="https://pinterest.com/ifit" target="_blank" class="">
+            <a
+              className="app__footer-icon-list-link"
+              href="https://pinterest.com/ifit"
+              target="_blank"
+            >
               <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 32 32"
               >
                 <title>Instagram</title>
@@ -139,6 +162,13 @@ function Footer() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="app__footer-subfooter">
+        <a href="/privacypolicy">Privacy notice</a>
+        <a href="/termsofuse">Terms of use</a>
+        <a href="/cookiepolicy">Do Not Sell My Personal Information</a>
+        <a href="/privacypolicy#cpn">Your California privacy rights</a>
+        <span>&copy; iFit.com, All rights reserved</span>
       </div>
     </footer>
   );

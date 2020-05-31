@@ -8,6 +8,7 @@ function BlogGridItem(props) {
   return (
     <div className="app__blog-grid-item">
       <img
+        className="app__blog-grid-item-image"
         src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
         alt=""
       />
