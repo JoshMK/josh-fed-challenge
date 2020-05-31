@@ -1,5 +1,8 @@
 .app {
   &__blog-grid-item {
-    margin: 0 auto;
+    margin: 2em auto;
+    box-shadow: 0 7px 12px rgba(46, 49, 52, 0.3);
+    border-radius: 4px;
+    background-color: #ffffff;
   }
 }

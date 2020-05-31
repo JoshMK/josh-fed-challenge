@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "img": "img0.png",
+      "text-en": "Treadmills",
+      "text-es": "Cintas de correr"
+    },
+    {
+      "img": "img1.png",
+      "text-en": "Bikes",
+      "text-es": "Bicicletas"
+    },
+    {
+      "img": "img2.png",
+      "text-en": "Ellipticals",
+      "text-es": "Elípticas"
+    },
+    {
+      "img": "img3.png",
+      "text-en": "Strength",
+      "text-es": "Fuerza"
+    }
+  ]
+}

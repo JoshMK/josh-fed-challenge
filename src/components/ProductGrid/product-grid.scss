@@ -1,4 +1,7 @@
 .app {
+  &__product-grid-header {
+    text-align: center;
+  }
   &__product-grid {
     display: flex;
     flex-direction: column;
