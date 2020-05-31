@@ -3,24 +3,28 @@
     {
       "img": "img0.png",
       "alt": "a woman running on a treadmill",
+      "link": "treadmills",
       "text-english": "Treadmills",
       "text-español": "Cintas de correr"
     },
     {
       "img": "img1.png",
       "alt": "a man cycling on a bicycle",
+      "link": "bikes",
       "text-english": "Bikes",
       "text-español": "Bicicletas"
     },
     {
       "img": "img2.png",
       "alt": "a woman running on an elliptical",
+      "link": "ellipticals",
       "text-english": "Ellipticals",
       "text-español": "Elípticas"
     },
     {
       "img": "img3.png",
       "alt": "a man strength training",
+      "link": "strength-training",
       "text-english": "Strength",
       "text-español": "Fuerza"
     }
