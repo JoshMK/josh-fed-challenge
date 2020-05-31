@@ -2,23 +2,23 @@
   "products": [
     {
       "img": "img0.png",
-      "text-en": "Treadmills",
-      "text-es": "Cintas de correr"
+      "text-english": "Treadmills",
+      "text-español": "Cintas de correr"
     },
     {
       "img": "img1.png",
-      "text-en": "Bikes",
-      "text-es": "Bicicletas"
+      "text-english": "Bikes",
+      "text-español": "Bicicletas"
     },
     {
       "img": "img2.png",
-      "text-en": "Ellipticals",
-      "text-es": "Elípticas"
+      "text-english": "Ellipticals",
+      "text-español": "Elípticas"
     },
     {
       "img": "img3.png",
-      "text-en": "Strength",
-      "text-es": "Fuerza"
+      "text-english": "Strength",
+      "text-español": "Fuerza"
     }
   ]
 }

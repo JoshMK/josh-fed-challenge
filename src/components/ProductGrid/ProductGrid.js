@@ -7,7 +7,7 @@ import productItems from "../../constants/product-grid-items.json";
 //SCSS
 import "./product-grid.scss";
 
-function ProductGrid() {
+function ProductGrid(props) {
   const PRODUCTS = productItems["products"];
   return (
     <>
@@ -16,7 +16,9 @@ function ProductGrid() {
       </h2>
       <div className="app__product-grid">
         {Object.values(PRODUCTS).map((product, i) => {
-          return <ProductGridItem key={`post-${i}`} {...product} />;
+          return (
+            <ProductGridItem lang={props.lang} key={`post-${i}`} {...product} />
+          );
         })}
       </div>
     </>

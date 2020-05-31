@@ -1,9 +1,11 @@
 //React core
 import React from "react";
+//custom components
+import LanguagePicker from "../LanguagePicker/LanguagePicker";
 //CSS
 import "./footer.scss";
 
-function Footer() {
+function Footer(props) {
   return (
     <footer className="app__footer">
       <div className="app__footer-lists">
@@ -164,6 +166,7 @@ function Footer() {
         </ul>
       </div>
       <div className="app__footer-subfooter">
+        <LanguagePicker changeAppLanguage={props.changeAppLanguage} />
         <span className="app__footer-subfooter-text">
           &copy; iFit.com, All rights reserved
         </span>

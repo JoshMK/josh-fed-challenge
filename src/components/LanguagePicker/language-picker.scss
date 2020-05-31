@@ -1,0 +1,15 @@
+.app {
+  &__language-picker {
+    position: absolute;
+    left: 0;
+    margin-left: 1em;
+  }
+  &__language-picker-select {
+    padding: 0.5em;
+    border-radius: 4px;
+    background-color: #2e3134;
+    color: #fff;
+    min-width: 128px;
+    font-size: 1em;
+  }
+}
