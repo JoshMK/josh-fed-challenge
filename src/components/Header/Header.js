@@ -24,9 +24,16 @@ const Header = (props) => {
             );
           })}
         </ul>
-        <HeaderNavButton />
+        <HeaderNavButton {...props} />
       </nav>
-      <nav aria-label="Secondary" className="app__header-subheader">
+      <nav
+        aria-label="Secondary"
+        className={`app__header-subheader${
+          !props.mobileMenuToggled && props.isMobile
+            ? " app__header-subheader--hidden"
+            : ""
+        }`}
+      >
         <ul className="app__header-subheader-list">
           {SECONDARYNAV.map((item) => {
             return (

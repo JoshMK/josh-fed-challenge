@@ -6,14 +6,14 @@ import "./header-nav-button.scss";
 const NavMenuButton = (props) => {
   return (
     <button
-      className="app__menu-button"
+      className="app__header-nav-button"
       aria-expanded={props.mobileMenuToggled ? "true" : "false"}
       onClick={props.toggleMobileMenu}
     >
-      <span className="app__menu-button-text">Menu</span>
-      <span className="app__menu-button-line" aria-hidden="true"></span>
-      <span className="app__menu-button-line" aria-hidden="true"></span>
-      <span className="app__menu-button-line" aria-hidden="true"></span>
+      <span className="app__sr-only">Menu</span>
+      <span className="app__header-nav-button-line" aria-hidden="true"></span>
+      <span className="app__header-nav-button-line" aria-hidden="true"></span>
+      <span className="app__header-nav-button-line" aria-hidden="true"></span>
     </button>
   );
 };

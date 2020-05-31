@@ -22,7 +22,7 @@ class App extends Component {
   };
   checkIsMobile = () => {
     window.innerWidth > 768
-      ? this.setState({ isMobile: false })
+      ? this.setState({ isMobile: false, mobileMenuToggled: false })
       : this.setState({ isMobile: true });
   };
 
@@ -46,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header lang={this.state.lang} />
+        <Header {...this.state} toggleMobileMenu={this.toggleMobileMenu} />
         <HeroImage lang={this.state.lang} />
         <ReviewSlider lang={this.state.lang} />
         <BlogGrid lang={this.state.lang} />
