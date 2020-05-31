@@ -58,7 +58,23 @@
   "icons": [
     {
       "name": "Youtube",
-      "link": "/"
+      "link": "https://www.youtube.com/user/iFitLive"
+    },
+    {
+      "name": "Pintrest",
+      "link": "https://pinterest.com/ifit"
+    },
+    {
+      "name": "Facebook",
+      "link": "https://www.facebook.com/ifit"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/ifit"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://instagram.com/ifit"
     }
   ],
   "copywrite": [
