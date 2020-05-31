@@ -2,7 +2,7 @@
 import React from "react";
 //custom components
 import ProductGridItem from "../ProductGridItem/ProductGridItem";
-//jSON
+//JSON
 import productItems from "../../constants/product-grid-items.json";
 //SCSS
 import "./product-grid.scss";

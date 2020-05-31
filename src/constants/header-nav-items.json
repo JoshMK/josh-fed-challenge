@@ -1,0 +1,41 @@
+{
+  "primary-navigation": [
+    {
+      "link": "blog",
+      "text-english": "Blog",
+      "text-español": "Blog"
+    },
+    {
+      "link": "nourish",
+      "text-english": "Nourish",
+      "text-español": "Nutrir"
+    },
+    {
+      "link": "shop",
+      "text-english": "Shop",
+      "text-español": "Tienda"
+    }
+  ],
+  "secondary-navigation": [
+    {
+      "link": "exercise",
+      "text-english": "Exercise",
+      "text-español": "Ejercicio"
+    },
+    {
+      "link": "nutrition",
+      "text-english": "Nutrition",
+      "text-español": "Nutrición"
+    },
+    {
+      "link": "activity",
+      "text-english": "Activity",
+      "text-español": "Actividad"
+    },
+    {
+      "link": "sleep",
+      "text-english": "Sleep",
+      "text-español": "Dormir"
+    }
+  ]
+}
