@@ -3,18 +3,10 @@ import React from "react";
 //SCSS
 import "./blog-grid-item.scss";
 
-function BlogGridItem(props) {
-  const logoImg = props.img ? props.img : "";
-  return (
-    <div className="app__blog-grid-item">
-      <img
-        className="app__blog-grid-item-image"
-        src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
-        alt=""
-      />
-      <div className="app__blog-grid-item-content">
-        <p className="app__blog-grid-item-text">{props["text-en"]}</p>
-        {/* clock icon */}
+function renderDistanceIcon(dist) {
+  if (dist !== "") {
+    return (
+      <>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="11"
@@ -32,8 +24,17 @@ function BlogGridItem(props) {
         </svg>
         <span>
           <span className="app__sr-only">Time:</span>
-          {props.time}
+          {dist}
         </span>
+      </>
+    );
+  }
+}
+
+function renderClockIcon(time) {
+  if (time > 0) {
+    return (
+      <>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="10"
@@ -51,11 +52,39 @@ function BlogGridItem(props) {
         </svg>
         <span>
           <span className="app__sr-only">Distance:</span>
-          {props.dist}
+          {time}
         </span>
-        <a className="app__blog-grid-item-link" href="">
-          View details
-        </a>
+      </>
+    );
+  }
+}
+
+function renderDetailsLink(link) {
+  if (link !== "") {
+    return (
+      <a className="app__blog-grid-item-link" href="">
+        View details
+      </a>
+    );
+  }
+}
+
+function BlogGridItem(props) {
+  const logoImg = props.img ? props.img : "";
+  return (
+    <div className="app__blog-grid-item">
+      <img
+        className="app__blog-grid-item-image"
+        src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
+        alt=""
+      />
+      <div className="app__blog-grid-item-content">
+        <p className="app__blog-grid-item-text">{props["text-en"]}</p>
+        {/* conditionally show clock icon */}
+        {renderClockIcon(props.time)}
+        {/* conditionally show distance icon */}
+        {renderDistanceIcon(props.dist)}
+        {renderDetailsLink(props.detailsLink)}
       </div>
     </div>
   );
