@@ -7,7 +7,7 @@
     background-color: #ffffff;
     margin: 0 auto;
     transition: box-shadow 0.2s;
-    padding-bottom: 0.5em;
+    padding-bottom: 1.25em;
     &:hover,
     &:focus {
       box-shadow: 0 12px 7px rgba(46, 49, 52, 0.3);
@@ -16,6 +16,12 @@
   &__blog-grid-item-image {
     width: 100%;
   }
+  &__blog-grid-item-image-sm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+  }
   &__blog-grid-item-icon {
     margin: 0 0.25em;
     font-weight: 700;
@@ -23,6 +29,7 @@
     font-size: 0.85rem;
   }
   &__blog-grid-item-content {
+    position: relative;
     padding: 0em 1em 1em 1em;
   }
   &__blog-grid-item-text {
@@ -31,6 +38,7 @@
     font-weight: 700;
     letter-spacing: 0.3px;
     line-height: 18px;
+    max-width: 240px;
   }
   &__blog-grid-item-link {
     display: block;

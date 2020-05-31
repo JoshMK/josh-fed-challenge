@@ -92,6 +92,7 @@ function renderImage(props) {
 }
 
 function BlogGridItem(props) {
+  const logoImgSm = props["img-sm"] ? props["img-sm"] : "";
   return (
     <div className="app__blog-grid-item">
       {/* conditionally render images */}
@@ -100,6 +101,11 @@ function BlogGridItem(props) {
         <p className="app__blog-grid-item-text">
           {props[`text-${props.lang}`]}
         </p>
+        <img
+          className="app__blog-grid-item-image-sm"
+          src={require(`../../assets/images/blog-grid-item-images/${logoImgSm}`)}
+          alt=""
+        />
         {/* conditionally show clock icon */}
         {renderClockIcon(props.time)}
         {/* conditionally show distance icon */}
