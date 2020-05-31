@@ -3,6 +3,7 @@ import React from "react";
 //SCSS
 import "./blog-grid-item.scss";
 
+//renderDistanceIcon - output a distance icon and value if the blog item has them
 function renderDistanceIcon(dist) {
   if (dist !== "") {
     return (
@@ -31,6 +32,7 @@ function renderDistanceIcon(dist) {
   }
 }
 
+//renderClockIcon - output a time icon and value if the blog item has them
 function renderClockIcon(time) {
   if (time > 0) {
     return (
@@ -59,6 +61,7 @@ function renderClockIcon(time) {
   }
 }
 
+//renderDetailsLink - output a clickable link if the blog item has one
 function renderDetailsLink(link) {
   if (link !== "") {
     return (
@@ -84,6 +87,7 @@ function BlogGridItem(props) {
         {renderClockIcon(props.time)}
         {/* conditionally show distance icon */}
         {renderDistanceIcon(props.dist)}
+        {/* conditionally show details link */}
         {renderDetailsLink(props.detailsLink)}
       </div>
     </div>
