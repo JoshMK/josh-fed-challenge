@@ -72,15 +72,27 @@ function renderDetailsLink(link) {
   }
 }
 
-function BlogGridItem(props) {
+//renderDetailsLink - output the item's images
+function renderImage(props) {
   const logoImg = props.img ? props.img : "";
   return (
+    <>
+      <a href={props.detailsLink}>
+        <img
+          className="app__blog-grid-item-image"
+          src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
+          alt={props.alt}
+        />
+      </a>
+    </>
+  );
+}
+
+function BlogGridItem(props) {
+  return (
     <div className="app__blog-grid-item">
-      <img
-        className="app__blog-grid-item-image"
-        src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
-        alt=""
-      />
+      {/* conditionally render images */}
+      {renderImage(props)}
       <div className="app__blog-grid-item-content">
         <p className="app__blog-grid-item-text">{props["text-en"]}</p>
         {/* conditionally show clock icon */}
