@@ -6,6 +6,7 @@ import HeroImage from "./components/HeroImage/HeroImage";
 import ReviewSlider from "./components/ReviewSlider/ReviewSlider";
 import BlogGrid from "./components/BlogGrid/BlogGrid";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ReviewSlider />
       <BlogGrid />
       <ProductGrid />
+      <Footer />
     </>
   );
 }

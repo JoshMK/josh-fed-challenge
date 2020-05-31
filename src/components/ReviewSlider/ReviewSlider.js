@@ -3,7 +3,7 @@ import React from "react";
 //custom components
 import ReviewSliderItem from "../ReviewSliderItem/ReviewSliderItem";
 //jSON
-import reviews from "../../constants/reviews.json";
+import reviews from "../../constants/review-slider-items.json";
 //SCSS
 import "./review-slider.scss";
 

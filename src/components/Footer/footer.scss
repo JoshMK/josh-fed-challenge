@@ -1,0 +1,27 @@
+.app {
+  &__footer {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #2e3134;
+  }
+  &__footer-lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &__footer-list {
+    list-style: none;
+  }
+  &__footer-list-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__footer-icons {
+    border-top: 2px solid #585a5d;
+    border-bottom: 2px solid #585a5d;
+    display: flex;
+  }
+}
