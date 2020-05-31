@@ -55,7 +55,12 @@
       "text-español": "Accesibilidad"
     }
   ],
-  "icons": [{}],
+  "icons": [
+    {
+      "name": "Youtube",
+      "link": "/"
+    }
+  ],
   "copywrite": [
     {
       "link": "privacy-notice",
