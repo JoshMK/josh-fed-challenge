@@ -3,7 +3,7 @@ import React from "react";
 //CSS
 import "./hero-image.scss";
 
-function HeroImage(props) {
+const HeroImage = (props) => {
   const HEROBG = require(`../../assets/images/hero-images/${props.heroImage}.jpg`);
   const HEROBGSTYLE = {
     backgroundImage: `url("${HEROBG}")`,
@@ -20,6 +20,6 @@ function HeroImage(props) {
       </div>
     </div>
   );
-}
+};
 
 export default HeroImage;

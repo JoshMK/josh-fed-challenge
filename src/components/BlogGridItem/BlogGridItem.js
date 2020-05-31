@@ -23,9 +23,11 @@ function renderDistanceIcon(dist) {
             </g>
           </g>
         </svg>
-        <span>
-          <span className="app__sr-only">Time:</span>
+        <span className="app__blog-grid-item-icon">
+          <span className="app__sr-only">Distance:</span>
           {dist}
+          <span aria-hidden="true">M</span>
+          <span className="app__sr-only">miles</span>
         </span>
       </>
     );
@@ -52,9 +54,10 @@ function renderClockIcon(time) {
             </g>
           </g>
         </svg>
-        <span>
-          <span className="app__sr-only">Distance:</span>
+        <span className="app__blog-grid-item-icon">
+          <span className="app__sr-only">Time:</span>
           {time}
+          <span className="app__sr-only">minutes</span>
         </span>
       </>
     );
@@ -65,7 +68,7 @@ function renderClockIcon(time) {
 function renderDetailsLink(link) {
   if (link !== "") {
     return (
-      <a className="app__blog-grid-item-link" href="">
+      <a className="app__blog-grid-item-link" href={link}>
         View details
       </a>
     );
