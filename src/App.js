@@ -15,17 +15,28 @@ class App extends Component {
     lang: "english",
     mobileMenuToggled: false,
     isMobile: true,
+    headerScroll: true,
   };
+
+  detectHeaderScroll = () => {
+    window.pageYOffset > 990
+      ? this.setState({ headerScroll: false })
+      : this.setState({ headerScroll: true });
+  };
+
   //changeAppLanguage - change application's language based on Language Picker's selection
   changeAppLanguage = (e) => {
     this.setState({ lang: e.target.value });
   };
+
+  //checkIsMobile - detect mobile transition
   checkIsMobile = () => {
     window.innerWidth > 768
       ? this.setState({ isMobile: false, mobileMenuToggled: false })
       : this.setState({ isMobile: true });
   };
 
+  //toggleMobileMenu - reveal submenu on mobile
   toggleMobileMenu = () => {
     this.setState((prevState) => ({
       ...prevState,
@@ -35,13 +46,15 @@ class App extends Component {
 
   componentDidMount() {
     //mount all events
-    window.addEventListener("resize", this.checkIsMobile);
+    window.addEventListener("resize", this.checkIsMobile, false);
+    window.addEventListener("scroll", this.detectHeaderScroll, false);
     this.checkIsMobile();
   }
 
   componentWillUnmount() {
     //unmount all events
     window.removeEventListener("resize", this.checkIsMobile);
+    window.removeEventListener("scroll", this.detectHeaderScroll);
   }
   render() {
     return (

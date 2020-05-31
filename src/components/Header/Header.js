@@ -12,7 +12,12 @@ const Header = (props) => {
   const SECONDARYNAV = headerNavItems["secondary-navigation"];
   return (
     <header>
-      <nav aria-label="Primary" className="app__header">
+      <nav
+        aria-label="Primary"
+        className={`app__header${
+          props.headerScroll ? " app__header--scroll" : ""
+        }`}
+      >
         <ul className="app__header-list">
           {PRIMARYNAV.map((item) => {
             return (
