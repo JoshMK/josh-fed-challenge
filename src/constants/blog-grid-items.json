@@ -3,6 +3,7 @@
     {
       "img": "img0-main.png",
       "img-sm": "img0-sm.png",
+      "alt": "a woman standing on the shore after kayaking for her workout",
       "time": 30.53,
       "dist": "6,248",
       "detailsLink": "./home",
@@ -13,6 +14,7 @@
     {
       "img": "img1-main.png",
       "img-sm": "img1-sm.png",
+      "alt": "a woman lifting in the middle of a performance workout",
       "time": 0,
       "dist": "",
       "detailsLink": "",
@@ -23,6 +25,7 @@
     {
       "img": "img2-main.png",
       "img-sm": "img2-sm.png",
+      "alt": "a woman cylcing during her workout",
       "time": 44.13,
       "dist": "9,948",
       "detailsLink": "",
@@ -33,6 +36,7 @@
     {
       "img": "img3-main.png",
       "img-sm": "img3-sm.png",
+      "alt": "a man kayaking on a river for his workout",
       "time": 0,
       "dist": "",
       "detailsLink": "",
@@ -43,6 +47,7 @@
     {
       "img": "img4-main.png",
       "img-sm": "img4-sm.png",
+      "alt": "people kayaking on a river for their workouts",
       "time": 36.22,
       "dist": "8,648",
       "detailsLink": "",
@@ -53,6 +58,7 @@
     {
       "img": "img5-main.png",
       "img-sm": "img5-sm.png",
+      "alt": "a woman cylcing during her workout",
       "time": 0,
       "dist": "",
       "detailsLink": "",
@@ -63,6 +69,7 @@
     {
       "img": "img6-main.png",
       "img-sm": "img6-sm.png",
+      "alt": "three people kayaking on a river for their workouts",
       "time": 22.22,
       "dist": "4,660",
       "detailsLink": "",
@@ -73,6 +80,7 @@
     {
       "img": "img7-main.png",
       "img-sm": "img7-sm.png",
+      "alt": "a man cylcing during his workout",
       "time": 0,
       "dist": "",
       "detailsLink": "",
