@@ -107,6 +107,7 @@ function renderFooterSVG(icon) {
         className="app__footer-icon-list-link"
         href={icon.link}
         target="_blank"
+        rel="noopener noreferrer"
         style={FOOTERICONBGSTYLE}
       >
         {SVG}

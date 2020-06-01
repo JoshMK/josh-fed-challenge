@@ -159,6 +159,11 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     text-transform: uppercase;
     width: 100%;
     padding: 1em 0;
+    transition: background-color 0.2s;
+    &:focus,
+    &:hover {
+      background-color: darken(#0069d2, 12.5%);
+    }
     @media screen and (min-width: 768px) {
       padding: 0;
       position: absolute;
