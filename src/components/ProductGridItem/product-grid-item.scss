@@ -23,5 +23,12 @@
     font-weight: bold;
     letter-spacing: 0.3px;
     line-height: 28px;
+    text-align: center;
+  }
+  &__product-grid-item-image {
+    height: 240px;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

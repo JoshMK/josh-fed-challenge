@@ -5,7 +5,7 @@ $hero-image-button-col: #0069d2;
     height: 400px;
     //tablet
     @media screen and (min-width: 768px) {
-      padding-top: 6em;
+      padding-top: 7.5em;
       height: 800px;
     }
   }
@@ -47,7 +47,7 @@ $hero-image-button-col: #0069d2;
     text-transform: uppercase;
     color: #fff;
     width: 100%;
-    max-width: 392px;
+    max-width: 240px;
     text-align: center;
     height: 56px;
     line-height: 56px;
@@ -56,10 +56,14 @@ $hero-image-button-col: #0069d2;
     background-color: $hero-image-button-col;
     margin: 1em 0;
     transition: background-color 0.2s;
-  }
-  &__hero-image-button:focus,
-  &__hero-image-button:hover {
-    background-color: darken($hero-image-button-col, 12.5%);
+    &:focus,
+    &:hover {
+      background-color: darken($hero-image-button-col, 12.5%);
+    }
+    //tablet
+    @media screen and (min-width: 768px) {
+      max-width: 392px;
+    }
   }
 }
 
