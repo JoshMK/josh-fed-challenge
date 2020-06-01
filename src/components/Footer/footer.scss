@@ -53,8 +53,8 @@
   &__footer-icon-list-link {
     fill: #fff;
     margin: 0 0.5em;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     padding: 0.5em;
     position: relative;
     display: flex;
@@ -66,6 +66,12 @@
     &:focus {
       fill: #d5d6d6;
     }
+    //mobile
+    @media screen and (min-width: 440px) {
+      width: 32px;
+      height: 32px;
+    }
+    //tablet
     @media screen and (min-width: 768px) {
       margin: 0 1em;
     }
