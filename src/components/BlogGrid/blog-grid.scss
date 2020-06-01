@@ -7,15 +7,15 @@
     grid-row-gap: 2em;
     row-gap: 2em;
     margin: 2em auto 0 auto;
-    //tablet view
+    //tablet
     @media screen and (min-width: 768px) {
       grid-template-columns: 50% 50%;
     }
-    //laptop view
+    //laptop
     @media screen and (min-width: 1200px) {
       grid-template-columns: 33% 33% 33%;
     }
-    //desktop view
+    //desktop
     @media screen and (min-width: 1480px) {
       grid-template-columns: 25% 25% 25% 25%;
     }

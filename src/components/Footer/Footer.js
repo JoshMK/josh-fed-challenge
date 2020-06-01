@@ -9,6 +9,10 @@ import "./footer.scss";
 
 //renderFooterSVG - ouput the markup for each footer svg (inlined for accessibe title/description tags)
 function renderFooterSVG(icon) {
+  const FOOTERICONBG = require(`../../assets/images/footer-icons/icon-bg.png`);
+  const FOOTERICONBGSTYLE = {
+    backgroundImage: `url("${FOOTERICONBG}")`,
+  };
   let SVG;
   if (icon.name === "Youtube") {
     SVG = (
@@ -103,6 +107,7 @@ function renderFooterSVG(icon) {
         className="app__footer-icon-list-link"
         href={icon.link}
         target="_blank"
+        style={FOOTERICONBGSTYLE}
       >
         {SVG}
       </a>
