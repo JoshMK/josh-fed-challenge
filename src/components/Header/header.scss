@@ -72,9 +72,13 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     font-size: 0.875em;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 0 1em;
+    padding: 0 0.5em;
     text-transform: uppercase;
     border-right: 1px solid $header-border-col;
+    //mobile
+    @media screen and (min-width: 440px) {
+      padding: 0 1em;
+    }
     //tablet
     @media screen and (min-width: 768px) {
       padding: 0 3em;

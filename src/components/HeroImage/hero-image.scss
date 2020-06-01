@@ -33,9 +33,11 @@ $hero-image-button-col: #0069d2;
     letter-spacing: 1px;
     margin: 0 1em 1em 1em;
     max-width: 1360px;
+    line-height: 1;
     //tablet
     @media screen and (min-width: 768px) {
       font-size: 4.5em;
+      line-height: normal;
     }
     //laptop
     @media screen and (min-width: 1024px) {

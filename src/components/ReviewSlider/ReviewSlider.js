@@ -53,7 +53,7 @@ class ReviewSlider extends Component {
       <div className="app__review-slider">
         <button
           onClick={(e) => this.scrollReviews(e, "left")}
-          className="app__review-slider-container-scroller"
+          className="app__review-slider-container-scroller app__review-slider-container-scroller--left"
           style={BUTTONBGSTYLE}
         >
           <span className="app__sr-only">Scroll to previous review</span>
