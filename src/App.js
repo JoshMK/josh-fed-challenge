@@ -19,6 +19,7 @@ class App extends Component {
     productsAnimate: false,
   };
 
+  //detectHeaderScroll - change state for animation event based on window Y position
   detectHeaderScroll = () => {
     const HEROHEIGHT = this.state.isMobile ? 360 : 800; //hero image height
     const PRODUCTSHEIGHT = this.state.isMobile ? 2800 : 1240; //products grid height
@@ -52,15 +53,15 @@ class App extends Component {
     }));
   };
 
+  //mount all events
   componentDidMount() {
-    //mount all events
     window.addEventListener("resize", this.checkIsMobile, false);
     window.addEventListener("scroll", this.detectHeaderScroll, false);
     this.checkIsMobile();
   }
 
+  //unmount all events
   componentWillUnmount() {
-    //unmount all events
     window.removeEventListener("resize", this.checkIsMobile);
     window.removeEventListener("scroll", this.detectHeaderScroll);
   }
@@ -68,17 +69,19 @@ class App extends Component {
     return (
       <>
         <Header {...this.state} toggleMobileMenu={this.toggleMobileMenu} />
-        <HeroImage lang={this.state.lang} heroImage={"gmapsinworkout"} />
-        <ReviewSlider lang={this.state.lang} />
-        <BlogGrid lang={this.state.lang} />
-        <ProductGrid
-          lang={this.state.lang}
-          productsAnimate={this.state.productsAnimate}
-        />
-        <Footer
-          lang={this.state.lang}
-          changeAppLanguage={this.changeAppLanguage}
-        />
+        <main id="main">
+          <HeroImage lang={this.state.lang} heroImage={"gmapsinworkout"} />
+          <ReviewSlider lang={this.state.lang} />
+          <BlogGrid lang={this.state.lang} />
+          <ProductGrid
+            lang={this.state.lang}
+            productsAnimate={this.state.productsAnimate}
+          />
+          <Footer
+            lang={this.state.lang}
+            changeAppLanguage={this.changeAppLanguage}
+          />
+        </main>
       </>
     );
   }

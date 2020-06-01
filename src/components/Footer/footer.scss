@@ -62,6 +62,10 @@
     align-items: center;
     background-size: 100%;
     transition: margin 0.1s;
+    &:hover,
+    &:focus {
+      fill: #d5d6d6;
+    }
     @media screen and (min-width: 768px) {
       margin: 0 1em;
     }
