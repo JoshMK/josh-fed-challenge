@@ -24,7 +24,11 @@ const ProductGrid = (props) => {
   return (
     <section>
       <h2 className="app__product-grid-header">{productText}</h2>
-      <div className="app__product-grid">
+      <div
+        className={`app__product-grid${
+          props.productsAnimate ? " app__product-grid--visible" : ""
+        }`}
+      >
         {PRODUCTS.map((product, i) => {
           return (
             <ProductGridItem lang={props.lang} key={`post-${i}`} {...product} />

@@ -16,15 +16,20 @@ class App extends Component {
     mobileMenuToggled: false,
     isMobile: true,
     headerScroll: true,
-    productsScroll: false,
+    productsAnimate: false,
   };
 
   detectHeaderScroll = () => {
-    const heroHeight = this.state.isMobile ? 360 : 800; //hero image height
-    const productsHeight = this.state.isMobile ? 1200 : 1640; //products grid height
-    window.pageYOffset > heroHeight
+    const HEROHEIGHT = this.state.isMobile ? 360 : 800; //hero image height
+    const PRODUCTSHEIGHT = this.state.isMobile ? 2800 : 1240; //products grid height
+    //fixed header animation
+    window.pageYOffset > HEROHEIGHT
       ? this.setState({ headerScroll: false })
       : this.setState({ headerScroll: true });
+    //animate products section
+    window.pageYOffset > PRODUCTSHEIGHT
+      ? this.setState({ productsAnimate: true })
+      : this.setState({ productsAnimate: false });
   };
 
   //changeAppLanguage - change application's language based on Language Picker's selection
@@ -66,7 +71,10 @@ class App extends Component {
         <HeroImage lang={this.state.lang} heroImage={"gmapsinworkout"} />
         <ReviewSlider lang={this.state.lang} />
         <BlogGrid lang={this.state.lang} />
-        <ProductGrid lang={this.state.lang} />
+        <ProductGrid
+          lang={this.state.lang}
+          productsAnimate={this.state.productsAnimate}
+        />
         <Footer
           lang={this.state.lang}
           changeAppLanguage={this.changeAppLanguage}
