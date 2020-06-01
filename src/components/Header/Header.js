@@ -18,6 +18,11 @@ const Header = (props) => {
     >
       <nav aria-label="Primary" className={"app__header-nav"}>
         <ul className="app__header-nav-list">
+          <li className="app__header-nav-list-item app__header-nav-list-item--hidden">
+            <a href="./" className="app__header-nav-link">
+              Home
+            </a>
+          </li>
           {PRIMARYNAV.map((item) => {
             return (
               <li key={item.link} className="app__header-nav-list-item">

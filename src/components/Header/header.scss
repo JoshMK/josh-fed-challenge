@@ -14,6 +14,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     transition: all 0.1s;
   }
   &__header-logo {
+    z-index: 1;
     display: none;
     position: absolute;
     top: 0;
@@ -52,6 +53,14 @@ $header-link-col: rgba(46, 49, 52, 0.8);
   &__header-nav-list-item,
   &__header-nav-subheader-list-item {
     height: 100%;
+  }
+  &__header-nav-list-item {
+    &--hidden {
+      //tablet
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
   }
   &__header-nav-link {
     height: 100%;
@@ -110,7 +119,12 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     height: 100%;
     text-align: center;
     padding: 2em 0;
-    transition: padding 0.1s;
+    transition: all 0.1s;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken(#fff, 25%);
+    }
     //tablet view
     @media screen and (min-width: 768px) {
       padding: 0 3em;

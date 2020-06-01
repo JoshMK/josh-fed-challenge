@@ -10,6 +10,7 @@ $hero-image-button-col: #0069d2;
     }
   }
   &__hero-image-textbox {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +25,8 @@ $hero-image-button-col: #0069d2;
     }
   }
   &__hero-image-text {
+    animation-name: hero-image-text-fadein;
+    animation-duration: 0.5s;
     color: #ffffff;
     font-size: 2em;
     font-weight: 600;
@@ -57,5 +60,16 @@ $hero-image-button-col: #0069d2;
   &__hero-image-button:focus,
   &__hero-image-button:hover {
     background-color: darken($hero-image-button-col, 12.5%);
+  }
+}
+
+@keyframes hero-image-text-fadein {
+  from {
+    opacity: 0;
+    transform: scaleX(1.5);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
   }
 }
