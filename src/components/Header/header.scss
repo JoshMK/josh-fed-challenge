@@ -1,5 +1,5 @@
-$header-bg-col: #fff;
-$header-border-col: #d5d6d6;
+@import "../../global-styles.scss";
+
 $header-link-col: rgba(46, 49, 52, 0.8);
 
 .app {
@@ -33,8 +33,8 @@ $header-link-col: rgba(46, 49, 52, 0.8);
   }
   &__header-nav {
     height: 46px;
-    background-color: $header-bg-col;
-    border: 1px solid $header-border-col;
+    background-color: $app-white;
+    border: 1px solid $app-light-gray;
     border-top: 0;
   }
   &__header-nav-list {
@@ -74,7 +74,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     letter-spacing: 1px;
     padding: 0 0.5em;
     text-transform: uppercase;
-    border-right: 1px solid $header-border-col;
+    border-right: 1px solid $app-light-gray;
     //mobile
     @media screen and (min-width: 440px) {
       padding: 0 1em;
@@ -90,8 +90,8 @@ $header-link-col: rgba(46, 49, 52, 0.8);
   }
   &__header-nav-subheader {
     position: relative;
-    box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
-    background-color: $header-bg-col;
+    box-shadow: $app-box-shadow;
+    background-color: $app-white;
   }
   &__header-nav-subheader--hidden {
     display: none;
@@ -116,8 +116,8 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     transition: all 0.1s;
     &:hover,
     &:focus {
-      color: #fff;
-      background-color: darken(#fff, 25%);
+      color: $app-white;
+      background-color: darken($app-white, 25%);
     }
   }
   &__header-nav-subheader-link {
@@ -151,9 +151,9 @@ $header-link-col: rgba(46, 49, 52, 0.8);
   &__header-nav-subheader-button {
     display: block;
     text-align: center;
-    box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
-    background-color: #0069d2;
-    color: #ffffff;
+    box-shadow: $app-box-shadow;
+    background-color: $app-blue;
+    color: $app-white;
     font-size: 0.875rem;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -166,7 +166,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     transition: background-color 0.2s;
     &:focus,
     &:hover {
-      background-color: darken(#0069d2, 12.5%);
+      background-color: darken($app-blue, 12.5%);
     }
     @media screen and (min-width: 768px) {
       padding: 0;

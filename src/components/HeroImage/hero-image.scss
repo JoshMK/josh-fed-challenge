@@ -1,4 +1,4 @@
-$hero-image-button-col: #0069d2;
+@import "../../global-styles.scss";
 
 .app {
   &__hero-image {
@@ -27,7 +27,7 @@ $hero-image-button-col: #0069d2;
   &__hero-image-text {
     animation-name: hero-image-text-fadein;
     animation-duration: 0.5s;
-    color: #ffffff;
+    color: $app-white;
     font-size: 2em;
     font-weight: 600;
     letter-spacing: 1px;
@@ -47,7 +47,7 @@ $hero-image-button-col: #0069d2;
   &__hero-image-button {
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: $app-white;
     width: 100%;
     max-width: 240px;
     text-align: center;
@@ -55,12 +55,12 @@ $hero-image-button-col: #0069d2;
     line-height: 56px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    background-color: $hero-image-button-col;
+    background-color: $app-blue;
     margin: 1em 0;
     transition: background-color 0.2s;
     &:focus,
     &:hover {
-      background-color: darken($hero-image-button-col, 12.5%);
+      background-color: darken($app-blue, 12.5%);
     }
     //tablet
     @media screen and (min-width: 768px) {

@@ -1,7 +1,11 @@
+@import "../../global-styles.scss";
+
+$footer-border-col: #585a5d;
+
 .app {
   &__footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    background-color: #2e3134;
+    background-color: $app-dark-gray-alt;
   }
   &__footer-lists {
     padding: 2em;
@@ -30,14 +34,14 @@
     }
   }
   &__footer-list-item-link {
-    color: #fff;
+    color: $app-white;
     text-decoration: none;
     font-size: 1.125rem;
   }
   &__footer-icons {
     padding: 1em 0;
-    border-top: 2px solid #585a5d;
-    border-bottom: 2px solid #585a5d;
+    border-top: 2px solid $footer-border-col;
+    border-bottom: 2px solid $footer-border-col;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,7 +55,7 @@
     align-items: center;
   }
   &__footer-icon-list-link {
-    fill: #fff;
+    fill: $app-white;
     margin: 0 0.5em;
     width: 24px;
     height: 24px;
@@ -64,7 +68,7 @@
     transition: margin 0.1s;
     &:hover,
     &:focus {
-      fill: #d5d6d6;
+      fill: $app-light-gray;
     }
     //mobile
     @media screen and (min-width: 440px) {
@@ -90,7 +94,7 @@
   &__footer-subfooter-link,
   &__footer-subfooter-text {
     font-size: 1.125rem;
-    color: #fff;
+    color: $app-white;
     padding: 0 1em 1em 0;
     //laptop
     @media screen and (min-width: 1024px) {

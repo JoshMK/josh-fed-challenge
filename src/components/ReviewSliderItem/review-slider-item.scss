@@ -1,3 +1,5 @@
+@import "../../global-styles.scss";
+
 .app {
   &__review-slider-item {
     display: flex;
@@ -7,9 +9,9 @@
     text-align: center;
     width: 220px;
     height: 184px;
-    box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
+    box-shadow: $app-box-shadow;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: $app-white;
     margin: 0 1em 0 1em;
     transition: transform 0.2s;
     &:last-child {
