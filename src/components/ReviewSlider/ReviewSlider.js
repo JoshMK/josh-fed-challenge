@@ -21,7 +21,7 @@ class ReviewSlider extends Component {
     if (dir === "left") {
       if (this.state.index === 0) {
         this.setState({
-          index: this.state.maxIndex,
+          index: this.state.maxIndex - 1,
         });
       } else {
         this.setState((prevState) => ({
@@ -32,7 +32,7 @@ class ReviewSlider extends Component {
     }
     //right scroll
     else if (dir === "right") {
-      if (this.state.index === this.state.maxIndex) {
+      if (this.state.index === this.state.maxIndex - 1) {
         this.setState({
           index: 0,
         });
@@ -56,7 +56,7 @@ class ReviewSlider extends Component {
           className="app__review-slider-container-scroller"
           style={BUTTONBGSTYLE}
         >
-          <span className="app__sr-only">Scroll left</span>
+          <span className="app__sr-only">Scroll to previous review</span>
         </button>
         <div className="app__review-slider-container">
           {REVIEWSLIDES.map((slide, i) => {
@@ -76,7 +76,7 @@ class ReviewSlider extends Component {
           className="app__review-slider-container-scroller app__review-slider-container-scroller--right"
           style={BUTTONBGSTYLE}
         >
-          <span className="app__sr-only">Scroll right</span>
+          <span className="app__sr-only">Scroll to next review</span>
         </button>
       </div>
     );
