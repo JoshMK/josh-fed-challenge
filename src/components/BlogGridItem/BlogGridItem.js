@@ -80,19 +80,33 @@ function renderImage(props) {
   const logoImg = props.img ? props.img : "";
   return (
     <>
-      <a href={props.detailsLink}>
-        <img
-          className="app__blog-grid-item-image"
-          src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
-          alt={props.alt}
-        />
-      </a>
+      <div className="app__blog-grid-item-workout-container">
+        <a href={props.detailsLink}>
+          <img
+            className="app__blog-grid-item-image"
+            src={require(`../../assets/images/blog-grid-item-images/${logoImg}`)}
+            alt={props.alt}
+          />
+          {props.workouts > 0 && (
+            <div className="app__blog-grid-item-workout">
+              <span className="app__blog-grid-item-workout-number">
+                {props.workouts}
+              </span>
+              <span className="app__blog-grid-item-workout-text">Workouts</span>
+              <img
+                src={require(`../../assets/images/blog-grid-item-images/workout-icon.png`)}
+                alt=""
+              />
+            </div>
+          )}
+        </a>
+      </div>
     </>
   );
 }
 
 const BlogGridItem = (props) => {
-  const logoImgSm = props["img-sm"] ? props["img-sm"] : "";
+  const LOGOIMGSM = props["img-sm"] ? props["img-sm"] : "";
   return (
     <div className="app__blog-grid-item">
       {/* conditionally render images */}
@@ -104,7 +118,7 @@ const BlogGridItem = (props) => {
         <a href={props.detailsLink}>
           <img
             className="app__blog-grid-item-image-sm"
-            src={require(`../../assets/images/blog-grid-item-images/${logoImgSm}`)}
+            src={require(`../../assets/images/blog-grid-item-images/${LOGOIMGSM}`)}
             alt=""
           />
         </a>

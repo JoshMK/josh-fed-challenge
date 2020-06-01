@@ -51,4 +51,37 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
+  &__blog-grid-item-workout-container {
+    position: relative;
+  }
+  &__blog-grid-item-workout {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 176px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__blog-grid-item-workout-number {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    padding-bottom: 0.5em;
+  }
+  &__blog-grid-item-workout-text {
+    font-size: 0.625rem;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
 }
