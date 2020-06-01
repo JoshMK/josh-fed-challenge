@@ -13,6 +13,22 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     opacity: 1;
     transition: all 0.1s;
   }
+  &__header-logo {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 1em;
+    @media screen and (min-width: 768px) {
+      display: initial;
+    }
+  }
+  &__header-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
   &__header-nav {
     height: 46px;
     background-color: $header-bg-col;
@@ -60,6 +76,7 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     text-decoration: none;
   }
   &__header-nav-subheader {
+    position: relative;
     box-shadow: 0 1px 2px rgba(46, 49, 52, 0.4);
     background-color: $header-bg-col;
   }
@@ -70,10 +87,6 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     position: relative;
     flex-direction: column;
     justify-content: center;
-    //laptop
-    @media screen and (max-width: 1024px) and (min-width: 768px) {
-      justify-content: flex-start;
-    }
     //tablet
     @media screen and (min-width: 768px) {
       flex-direction: row;
@@ -96,6 +109,8 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 2em 0;
+    transition: padding 0.1s;
     //tablet view
     @media screen and (min-width: 768px) {
       padding: 0 3em;
@@ -106,6 +121,10 @@ $header-link-col: rgba(46, 49, 52, 0.8);
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    //laptop
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+      padding: 0 0.75em;
     }
   }
   &__header-nav-subheader-button {
@@ -122,7 +141,9 @@ $header-link-col: rgba(46, 49, 52, 0.8);
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
+    padding: 1em 0;
     @media screen and (min-width: 768px) {
+      padding: 0;
       position: absolute;
       right: 0;
       top: 25%;

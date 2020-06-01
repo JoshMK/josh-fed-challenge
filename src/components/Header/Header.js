@@ -38,6 +38,14 @@ const Header = (props) => {
             : ""
         }`}
       >
+        <div className="app__header-logo">
+          <a href="https://www.ifit.com/" className="app__header-logo-link">
+            <img
+              src={require("../../assets/images/header-images/ifit-logo.png")}
+              alt="iFit"
+            />
+          </a>
+        </div>
         <ul className="app__header-nav-subheader-list">
           {SECONDARYNAV.map((item) => {
             return (
