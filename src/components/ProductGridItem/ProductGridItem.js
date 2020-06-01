@@ -4,14 +4,14 @@ import React from "react";
 import "./product-grid-item.scss";
 
 const ProductGridItem = (props) => {
-  const logoImg = props.img ? props.img : "";
+  const LOGOIMG = props.img ? props.img : "";
   return (
     <div className="app__product-grid-item">
       <figure>
         <a href={props.link}>
           <img
             className="app__product-grid-item-image"
-            src={require(`../../assets/images/product-grid-item-images/${logoImg}`)}
+            src={require(`../../assets/images/product-grid-item-images/${LOGOIMG}`)}
             alt={props.alt}
           />
         </a>

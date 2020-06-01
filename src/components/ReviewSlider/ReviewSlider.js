@@ -14,7 +14,7 @@ class ReviewSlider extends Component {
     index: 0,
     maxIndex: REVIEWSLIDES.length,
   };
-  //scrollReviews - cycle reviews slider item based on button press/enter
+  //scrollReviews - cycle reviews slider item based on button selection
   scrollReviews = (e, dir = "left") => {
     console.log(e);
     //left scroll

@@ -13,6 +13,7 @@ function renderDistanceIcon(dist) {
           width="11"
           height="10"
           viewBox="0 0 11 10"
+          aria-hidden="true"
         >
           <g>
             <g>
@@ -44,6 +45,7 @@ function renderClockIcon(time) {
           width="10"
           height="10"
           viewBox="0 0 10 10"
+          aria-hidden="true"
         >
           <g>
             <g>

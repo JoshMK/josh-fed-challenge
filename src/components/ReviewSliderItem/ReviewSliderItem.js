@@ -5,17 +5,14 @@ import "./review-slider-item.scss";
 
 const ReviewSliderItem = (props) => {
   const LOGOIMG = props.logo ? props.logo : "";
-  let translateY;
-  if (props.ariaHidden) {
-    translateY = {
-      transform: `translateY(-${props.translateY}px)`,
-    };
-  }
+  const TRANSLATEY = {
+    transform: `translateY(-${props.translateY}px)`,
+  };
   return (
     <div
       className="app__review-slider-item"
       aria-hidden={props.ariaHidden}
-      style={translateY}
+      style={TRANSLATEY}
     >
       <img
         src={require(`../../assets/images/review-slider-item-images/${LOGOIMG}`)}
