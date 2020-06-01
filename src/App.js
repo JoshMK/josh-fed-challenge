@@ -16,10 +16,13 @@ class App extends Component {
     mobileMenuToggled: false,
     isMobile: true,
     headerScroll: true,
+    productsScroll: false,
   };
 
   detectHeaderScroll = () => {
-    window.pageYOffset > 990
+    const heroHeight = this.state.isMobile ? 360 : 800; //hero image height
+    const productsHeight = this.state.isMobile ? 1200 : 1640; //products grid height
+    window.pageYOffset > heroHeight
       ? this.setState({ headerScroll: false })
       : this.setState({ headerScroll: true });
   };
