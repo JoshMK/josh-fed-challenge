@@ -9,11 +9,21 @@ import "./product-grid.scss";
 
 const ProductGrid = (props) => {
   const PRODUCTS = productItems["products"];
+  let productText;
+  switch (props.lang) {
+    case "english":
+      productText = "Interested in our exciting iFit-enabled equipment?";
+      break;
+    case "español":
+      productText =
+        "¿Interesado en nuestro emocionante equipo habilitado para iFit?";
+      break;
+    default:
+      productText = "Interested in our exciting iFit-enabled equipment?";
+  }
   return (
     <>
-      <h2 className="app__product-grid-header">
-        Interested in our exciting iFit-enabled equipment?
-      </h2>
+      <h2 className="app__product-grid-header">{productText}</h2>
       <div className="app__product-grid">
         {PRODUCTS.map((product, i) => {
           return (
