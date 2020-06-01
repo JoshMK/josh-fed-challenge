@@ -1,5 +1,5 @@
 //React core
-import React from "react";
+import React, { Component } from "react";
 //SCSS
 import "./review-slider-item.scss";
 

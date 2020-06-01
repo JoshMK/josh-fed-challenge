@@ -22,7 +22,7 @@ const ProductGrid = (props) => {
       productText = "Interested in our exciting iFit-enabled equipment?";
   }
   return (
-    <>
+    <section>
       <h2 className="app__product-grid-header">{productText}</h2>
       <div className="app__product-grid">
         {PRODUCTS.map((product, i) => {
@@ -31,7 +31,7 @@ const ProductGrid = (props) => {
           );
         })}
       </div>
-    </>
+    </section>
   );
 };
 

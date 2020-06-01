@@ -24,12 +24,12 @@ const HeroImage = (props) => {
   }
   return (
     <div className="app__hero-image">
-      <div style={HEROBGSTYLE} className="app__hero-image-textbox">
+      <section style={HEROBGSTYLE} className="app__hero-image-textbox">
         <h1 className="app__hero-image-text">{heroText}</h1>
         <a href="/join-ifit" className="app__hero-image-button">
           {heroTextLink}
         </a>
-      </div>
+      </section>
     </div>
   );
 };

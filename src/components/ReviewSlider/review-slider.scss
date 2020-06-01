@@ -10,4 +10,21 @@
       flex-direction: row;
     }
   }
+  &__review-slider-container {
+    overflow: hidden;
+    max-height: 183px;
+  }
+  &__review-slider-container-scroller {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 0;
+    background-size: 100%;
+    padding: 0;
+    cursor: pointer;
+    background-position: center;
+    &--right {
+      transform: rotate(180deg);
+    }
+  }
 }
