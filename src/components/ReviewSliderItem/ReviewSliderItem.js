@@ -6,7 +6,7 @@ import "./review-slider-item.scss";
 const ReviewSliderItem = (props) => {
   const logoImg = props.logo ? props.logo : "";
   return (
-    <div className="app__review-slider-item">
+    <div className="app__review-slider-item" aria-hidden={props.ariaHidden}>
       <img
         src={require(`../../assets/images/review-slider-item-images/${logoImg}`)}
         alt={props.alt}
